@@ -1,0 +1,38 @@
+.body {
+	background-color: black;
+	background-image: url("Images/Party.jpg");
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background-attachment: fixed;
+	color: white;
+}
+
+#contactBtn {
+	background: blue;
+	color: white;
+}
+
+#map {
+	width: 400px;
+	height: 320px;
+	background-color: black;
+	margin: auto;
+	display:inline-block
+}
+
+.jumbotron {
+	background-color: transparent;
+}
+
+.footer {
+	color: white;
+}
+
+.mapContainer {
+	margin: auto;
+	display:inline-block;
+	
+}
+

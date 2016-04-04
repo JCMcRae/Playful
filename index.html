@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>Playful Parties and Events</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+
+    <!-- Custom styles for this template -->
+    <link href="jumbotron-narrow.css" rel="stylesheet">
+    <link href="playful.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="../../assets/js/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+     <script src="https://maps.googleapis.com/maps/api/js"></script>
+     <script>
+  		function initialize() {
+  			var myLatLng = {lat: 34.00787, lng: -85.24769};
+  			var mapCanvas = document.getElementById('map');
+  			var mapOptions = {
+  			      center: new google.maps.LatLng(34.00787, -85.24769),
+  			      zoom: 15,
+  			      mapTypeId: google.maps.MapTypeId.ROADMAP
+  			    }
+  			var map = new google.maps.Map(mapCanvas, mapOptions);
+
+  			var marker = new google.maps.Marker({
+  			    position: myLatLng,
+  			    map: map,
+  			    title: 'Playful Parties and Events'
+  			  });
+  			}
+  		google.maps.event.addDomListener(window, 'load', initialize);
+	</script>
+  </head>
+
+  <body class="body">
+
+    <div class="container">
+
+      <div class="jumbotron">
+        <img src="Images/Logo 2.png" height="400" width="400">
+        <h2>The perfect solution to your party dilemma!</h2>
+      </div>
+      
+      <div class="text-center">
+        	<h2>Playful Parties & Events is your one stop party shop! We plan and host your party from start to finish. All you have to do is show up and enjoy!</h2>
+	</div>
+
+      <div class="row marketing">
+      	<h1 class="text-center">SERVICES</h1>
+        <div class="col-lg-6 text-center">
+          <h3>Bithday Parties</h3>
+          
+          <h3>Date Nights</h3>
+          
+          <h3>Fundraisers</h3>
+      </div>
+      <div class="col-lg-6 text-center">
+          <h3>Summer Camps</h3>
+
+          <h3>Field Trips</h3>
+        </div>
+    </div> <!-- /container -->
+    
+	
+	<div>
+		<h1 class="text-center">CONTACT</h1>
+		<h3>Phone Number: 1-800-000-0000</h3>
+		<h3>Address: 512 East Gibson Street, Cedartown, Georgia 30125</h3>
+		<h3>Email: playfulparties.com</h3>
+<!--      <div class="col-md-6">-->
+<!--      	<div id="map">-->
+<!--      		-->
+<!--      	</div>   -->
+<!--      </div>-->
+	</div>
+	
+	<div id="mapContainer">
+	<div id="map"></div>
+    </div>
+    
+    <footer class="footer text-center">
+        <p>&copy; Playful Parties and Events 2016</p>
+      </footer>
+
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+</html>
